@@ -100,3 +100,11 @@ li{
     color: #7F8CFF;
     text-transform: uppercase;
 }
+.bars{
+    width: 30px;
+}
+.bar{
+    border: 2px solid #6070FF;
+    margin-bottom: 3px;
+
+}
