@@ -85,7 +85,6 @@ li {
 }
 
 .logo {
-
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -93,7 +92,6 @@ li {
 }
 
 .headline_title {
-
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -102,7 +100,6 @@ li {
 }
 
 .headline_description {
-
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -110,7 +107,6 @@ li {
 }
 
 .headline_social-media .title {
-
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -130,9 +126,11 @@ li {
 .mt-5 {
   margin-top: 24px;
 }
-.mr-2{
-  margin-right:10px ;
+
+.mr-2 {
+  margin-right: 10px;
 }
+
 .p-5 {
   padding: 24px;
 }
@@ -141,20 +139,16 @@ li {
   border: 2px solid #d6d6d6;
   background: #fff;
   border-radius: 10px;
-
 }
 
 .w-100 {
   width: 100%;
 }
 
-.card-image {
-}
-
 .card-caption {
   font-weight: 700;
   font-size: 32px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .card-description {
@@ -174,40 +168,45 @@ li {
   border-radius: 8px;
   background: #ebebff;
 }
-.info{
+
+.info {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   color: #7a869a;
 }
-.card-infos .company{
+
+.card-infos .company {
   color: #344563;
 }
-.round-ball{
+
+.round-ball {
   border-radius: 10px;
   width: 8px;
   height: 8px;
   background: #7a869a;
 }
 
-.btn-primary{
-  background: #FFFFFF;
-  border: 1px solid #7F8CFF;
+.btn-primary {
+  background: #fff;
+  border: 1px solid #7f8cff;
   border-radius: 8px;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #6070FF;
+  color: #6070ff;
   padding: 10px;
 }
-.btn-primary:hover{
-  background: #6070FF;
-  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+
+.btn-primary:hover {
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   color: #fff;
 }
-.btn-primary:active{
-  background: #2230D2;
+
+.btn-primary:active {
+  background: #2230d2;
   border-radius: 8px;
   color: #fff;
 }
