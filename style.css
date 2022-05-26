@@ -2,12 +2,11 @@
     box-sizing: border-box;
 }
 body {
-    max-width: 480px;
     background: #E5E5E5;
+    padding: 0;
 }
 
 header {
-  border: 1px solid dodgerblue;
   border-bottom-left-radius: 5rem;
     background: #fff;
 }
@@ -65,4 +64,39 @@ li{
     background-image: url("assets/images/header-shapes mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.logo {
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #6070FF;
+}
+.headline_title{
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172B4D;
+    margin-bottom: 0;
+}
+.headline_description{
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+}
+.headline_social-media .title{
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7F8CFF;
+    text-transform: uppercase;
 }
