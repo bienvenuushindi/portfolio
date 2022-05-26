@@ -14,6 +14,16 @@ header {
 .container{
     height: 718px;
 }
+.px-5{
+    padding-left:24px;
+    padding-right:24px;
+}
+.pt-5{
+    padding-top:24px;
+}
+.pb-5{
+    padding-bottom: 24px;
+}
 ul {
     list-style: none;
     margin: 0;
