@@ -252,6 +252,10 @@ li {
   padding: auto 2px;
 }
 
+.align-self-center {
+  align-self: center;
+}
+
 .gap-2 {
   gap: 2em;
 }
@@ -268,9 +272,14 @@ li {
   margin: 0;
 }
 
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: 2fr 2fr 3fr;
+}
+
+
 /***********************************************************************
-I don't own the below piece code
-it is copied from https://www.w3schools.com/howto/howto_css_arrows.asp
+This  piece code was copied from https://www.w3schools.com/howto/howto_css_arrows.asp
 ***********************************************************************/
 .arrow {
   border: solid #acb7c3;
@@ -288,3 +297,4 @@ it is copied from https://www.w3schools.com/howto/howto_css_arrows.asp
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+/***********************************************************************/
