@@ -219,3 +219,62 @@ li {
 .round-top-rgt{
   border-top-right-radius: 5rem;
 }
+
+.skills-item {
+  background: #f7f7f9;
+  border-radius: 5px;
+  padding: 9px 12px;
+  margin: 10px 0px;
+  gap: 2em;
+
+}
+.skills-item > * {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+}
+
+.justify-content-around{
+   justify-content: space-around;
+}
+.accordion{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+.icon {
+  width: 10px;
+  height: 8px;
+  align-self: center;
+  padding: auto 2px ;
+}
+.gap-2{
+   gap: 2em;
+}
+
+.pr-3{
+  padding-right:3em ;
+}
+.border-b{
+  border-bottom: 1px solid #dfe1e6;
+}
+/***********************************************************************
+I don't own the below piece code
+it is copied from https://www.w3schools.com/howto/howto_css_arrows.asp
+***********************************************************************/
+.arrow {
+  border:solid #ACB7C3;
+  border-width: 0 3px 3px 0;
+  padding: 6px;
+  display: inline-block;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
