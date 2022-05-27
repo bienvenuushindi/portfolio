@@ -263,9 +263,11 @@ li {
 .border-b {
   border-bottom: 1px solid #dfe1e6;
 }
+
 .m-0 {
-  margin:0;
+  margin: 0;
 }
+
 /***********************************************************************
 I don't own the below piece code
 it is copied from https://www.w3schools.com/howto/howto_css_arrows.asp
