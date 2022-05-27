@@ -212,3 +212,10 @@ li {
   color: #fff;
 }
 
+.bg-white{
+  background: #fff;
+}
+
+.round-top-rgt{
+  border-top-right-radius: 5rem;
+}
