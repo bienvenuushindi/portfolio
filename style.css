@@ -181,11 +181,11 @@ li {
   color: #344563;
 }
 
-.round-ball {
+.round-dot {
   border-radius: 10px;
   width: 8px;
   height: 8px;
-  background: #7a869a;
+  background: #c1c7d0;
 }
 
 .btn-primary {
@@ -211,3 +211,4 @@ li {
   border-radius: 8px;
   color: #fff;
 }
+
