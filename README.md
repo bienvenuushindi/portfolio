@@ -14,7 +14,7 @@
 ## Getting Started
 
 
-**I know you want it :smile: **
+**I know you want it :smile:**
 
 *Just get ready and  Please follow the instructions bellow to get your nicely design portfolio*
 
