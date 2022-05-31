@@ -355,25 +355,28 @@ textarea {
 textarea {
   height: 9rem;
 }
+
 .btn-submit {
   color: #396df2;
   background-color: white;
-  border: 1px solid #6070ff;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   border-radius: 8px;
   align-self: flex-start;
   padding: 8px 15px;
-  }
-  .line {
-    width: 10rem;
-    height: 6px;
-    background-color: #000;
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
-  }
-  
-
+}
+.btn-submit:hover{
+  color: #fff;
+  background-color: #396df2;
+  border-color: #dfe1e6;
+}
+.line {
+  width: 10rem;
+  height: 6px;
+  background-color: #000;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
