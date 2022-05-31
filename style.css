@@ -366,11 +366,13 @@ textarea {
   align-self: flex-start;
   padding: 8px 15px;
 }
-.btn-submit:hover{
+
+.btn-submit:hover {
   color: #fff;
   background-color: #396df2;
   border-color: #dfe1e6;
 }
+
 .line {
   width: 10rem;
   height: 6px;
