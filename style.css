@@ -390,15 +390,12 @@ textarea {
 }
 
 .nav-list-item {
-  color: #344563;;
+  color: #344563;
+  padding-bottom: 0.6em;
 }
 
 .justify-content-end {
   justify-content: flex-end;
-}
-
-.nav-list-item {
-  padding-bottom: 0.6em;
 }
 
 .nav-list-item:hover {
@@ -420,7 +417,7 @@ textarea {
   width: 50px;
 }
 
-@media only screen and (min-width: 992px ) {
+@media only screen and (min-width: 992px) {
   .headline {
     background-image: url("assets/images/desktop/header-bg.png");
   }
@@ -431,7 +428,9 @@ textarea {
     margin-right: auto;
   }
 
-  .card, .toolbar, .about > * {
+  .card,
+  .toolbar,
+  .about > * {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -534,5 +533,4 @@ textarea {
     margin-left: 2rem;
     margin-right: 2rem;
   }
-
 }
