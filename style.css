@@ -423,15 +423,19 @@ textarea {
   }
 
   .headline > * {
-    width: 70%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .card,
   .toolbar,
   .about > * {
-    width: 80%;
+    width: 70%;
+    margin: auto;
+  }
+
+  .card {
+    max-width: 1156px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -453,8 +457,8 @@ textarea {
   }
 
   .px-about {
-    padding-left: calc(20% / 2);
-    padding-right: calc(20% / 2);
+    padding-left: calc(30% / 2);
+    padding-right: calc(30% / 2);
   }
 
   .d-none-lg {
@@ -469,6 +473,10 @@ textarea {
   .my-1-lg {
     margin-bottom: 1rem;
     margin-top: 1rem;
+  }
+
+  .mt-2-lg {
+    margin-top: 12px;
   }
 
   .d-flex-lg {
@@ -532,5 +540,27 @@ textarea {
   .form-group {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  .card:hover .card-btn {
+    background: #2230d2;
+    border-radius: 8px;
+    color: #fff;
+  }
+
+  .card:hover {
+    border: 2px solid #a7aeff;
+  }
+
+  .pt-4-lg {
+    padding-top: 24px;
+  }
+
+  .mt-5-lg {
+    margin-top: 40px;
+  }
+
+  .pl-1-lg {
+    padding-left: 12px;
   }
 }
