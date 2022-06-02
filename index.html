@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <header>
     <div class="row container  d-flex pb-5 flex-column">
-        <section id="toolbar" class="d-flex justify-content-between mt-3 pt-5 pb-5 px-5">
-            <h3 class="logo m-0">UshindiBienvenu</h3>
+        <section id="toolbar" class="d-flex justify-content-between mt-3 pt-5 pb-5 px-5 toolbar">
+            <h3 class="logo m-0 flex-grow-1">Ushindi</h3>
             <div id="menu" class="bars d-flex flex-column">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
+            <nav class="flex-grow-1 nav-bar">
+                <ul class="d-flex justify-content-end gap-2">
+                    <li class="nav-list-item">Portfolio</li>
+                    <li class="nav-list-item">About</li>
+                    <li class="nav-list-item">Contact</li>
+                </ul>
+            </nav>
         </section>
-        <section id="headline" class="headline flex-grow-1 d-flex flex-column justify-content-center pb-5 px-5">
+        <section id="headline" class="headline flex-grow-1 d-flex flex-column justify-content-center pb-5 px-5 ">
             <h1 class="headline_title">I’m Ushindi <br>
                 Glad to see you!</h1>
             <p class="headline_description">
@@ -46,131 +56,148 @@
 </header>
 <section id="projects">
     <div class="row mt-5 d-flex flex-column justify-content-center">
-        <div class="card  p-5 ">
+        <div class="card flex-dir-row-lg d-flex flex-column  p-5 ">
             <div class="card-image ">
-                <img src="assets/images/projects/tonic.png" alt="project snapshot">
+                <img src="assets/images/projects/tonic.png" class="d-none-lg" alt="project snapshot">
+                <img src="assets/images/desktop/projects/tonic.png" class="d-none-sm" alt="project snapshot">
             </div>
-            <h1 class="card-caption ">
-                Tonic
-            </h1>
-            <ul class="card-infos  d-flex ">
-                <li class="info company mr-2 ">CANOPY</li>
-                <li class="info align-self-center  mr-2">
-                    <div class="round-dot"></div>
-                </li>
-                <li class="info align-self-center mr-2"> Back End Dev</li>
-                <li class="info align-self-center mr-2">
-                    <div class="round-dot"></div>
-                </li>
-                <li class="info"> 2015</li>
-            </ul>
-            <div class="card-description ">
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-            </div>
-            <ul class="card-infos  grid-container ">
-                <li class="badge mr-2 ">html</li>
-                <li class="badge mr-2 ">css</li>
-                <li class="badge ">javaScript</li>
-            </ul>
-            <div class="mt-5 grid-item-1">
-                <button type="button" class="card-btn btn-primary">See Project</button>
-            </div>
-        </div>
-        <div class="card d-flex flex-column p-5">
-            <div class="card-image">
-                <img src="assets/images/projects/project2.png" alt="project snapshot">
-            </div>
-            <h1 class="card-caption">
-                Multi-Post <br>
-                Stories
-            </h1>
-            <ul class="card-infos d-flex align-baseline">
-                <li class="info company mr-2">CANOPY</li>
-                <li class="info  mr-2">
-                    <div class="round-dot"></div>
-                </li>
-                <li class="info align-self-center mr-2"> Back End Dev</li>
-                <li class="info align-self-center mr-2">
-                    <div class="round-dot"></div>
-                </li>
-                <li class="info"> 2015</li>
-            </ul>
-            <div class="card-description">
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-            </div>
-            <ul class="card-infos  grid-container ">
-                <li class="badge mr-2 ">html</li>
-                <li class="badge mr-2 ">css</li>
-                <li class="badge ">javaScript</li>
-            </ul>
-            <div class="mt-5">
-                <button type="button" class="card-btn btn-primary">See Project</button>
+            <div class="card-body pt-4-lg  mx-1-lg ">
+                <h1 class="card-caption m-0">
+                    Tonic
+                </h1>
+                <ul class="card-infos mt-2-lg d-flex ">
+                    <li class="info company mr-2 ">CANOPY</li>
+                    <li class="info align-self-center  mr-2">
+                        <div class="round-dot"></div>
+                    </li>
+                    <li class="info align-self-center mr-2"> Back End Dev</li>
+                    <li class="info align-self-center mr-2">
+                        <div class="round-dot"></div>
+                    </li>
+                    <li class="info"> 2015</li>
+                </ul>
+                <div class="card-description pt-4-lg   ">
+                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                </div>
+                <ul class="card-infos pt-4-lg grid-container ">
+                    <li class="badge mr-2 ">html</li>
+                    <li class="badge mr-2 ">css</li>
+                    <li class="badge ">javaScript</li>
+                </ul>
+                <div class="mt-5 mt-5-lg grid-item-1">
+                    <button type="button" class="card-btn btn-primary">See Project</button>
+                </div>
             </div>
         </div>
-        <div class="card d-flex flex-column p-5">
-            <div class="card-image">
-                <img src="assets/images/projects/project3.png" alt="project snapshot">
+        <div class="card flex-dir-row-lg d-flex flex-column p-5">
+            <div class="card-image order-lg-1">
+                <img src="assets/images/projects/project2.png" class="d-none-lg" alt="project snapshot">
+                <img src="assets/images/desktop/projects/multi-post.png" class="d-none-sm" alt="project snapshot">
             </div>
-            <h1 class="card-caption">
-                Tonic
-            </h1>
-            <ul class="card-infos d-flex align-baseline">
-                <li class="info company mr-2">CANOPY</li>
-                <li class="info  mr-2">
-                    <div class="round-dot"></div>
-                </li>
-                <li class="info align-self-center mr-2"> Back End Dev</li>
-                <li class="info align-self-center mr-2">
-                    <div class="round-dot"></div>
-                </li>
-                <li class="info"> 2015</li>
-            </ul>
-            <div class="card-description">
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-            </div>
-            <ul class="card-infos d-flex ">
-                <li class="badge mr-2">html</li>
-                <li class="badge mr-2">css</li>
-                <li class="badge">javaScript</li>
-            </ul>
-            <div class="mt-5">
-                <button type="button" class="card-btn btn-primary">See Project</button>
+            <div class="card-body pt-4-lg  mx-1-lg ">
+                <h1 class="card-caption m-0">
+                    Multi-Post
+                    Stories
+                </h1>
+                <ul class="card-infos mt-2-lg d-flex align-baseline">
+                    <li class="info company mr-2">CANOPY</li>
+                    <li class="info  mr-2">
+                        <div class="round-dot"></div>
+                    </li>
+                    <li class="info align-self-center mr-2"> Back End Dev</li>
+                    <li class="info align-self-center mr-2">
+                        <div class="round-dot"></div>
+                    </li>
+                    <li class="info"> 2015</li>
+                </ul>
+                <div class="card-description pt-4-lg  ">
+                    <p>Experimental content creation feature that allows users to add to an existing story over the
+                        course of a day without spamming their friends.</p>
+                </div>
+                <ul class="card-infos pt-4-lg d-flex ">
+                    <li class="badge mr-2 ">html</li>
+                    <li class="badge mr-2 d-none-sm">Ruby on rails</li>
+                    <li class="badge mr-2 ">css</li>
+                    <li class="badge ">javaScript</li>
+                </ul>
+                <div class="mt-5 mt-5-lg">
+                    <button type="button" class="card-btn btn-primary">See Project</button>
+                </div>
             </div>
         </div>
-        <div class="card d-flex flex-column p-5">
+        <div class="card flex-dir-row-lg d-flex flex-column p-5">
             <div class="card-image">
-                <img src="assets/images/projects/project4.png" alt="project snapshot">
+                <img src="assets/images/projects/project3.png" class="d-none-lg" alt="project snapshot">
+                <img src="assets/images/desktop/projects/facebook-360.png" class="d-none-sm" alt="project snapshot">
             </div>
-            <h1 class="card-caption">
-                Multi-Post <br>
-                Stories
-            </h1>
-            <ul class="card-infos d-flex align-baseline">
-                <li class="info company mr-2">CANOPY</li>
-                <li class="info  mr-2">
-                    <div class="round-dot"></div>
-                </li>
-                <li class="info align-self-center mr-2"> Back End Dev</li>
-                <li class="info align-self-center mr-2">
-                    <div class="round-dot"></div>
-                </li>
-                <li class="info"> 2015</li>
-            </ul>
-            <div class="card-description">
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+            <div class="card-body pt-4-lg  mx-1-lg ">
+                <h1 class="card-caption m-0">
+                    Tonic
+                </h1>
+
+                <ul class="card-infos mt-2-lg d-flex align-baseline">
+                    <li class="info company mr-2">CANOPY</li>
+                    <li class="info  mr-2">
+                        <div class="round-dot"></div>
+                    </li>
+                    <li class="info align-self-center mr-2"> Back End Dev</li>
+                    <li class="info align-self-center mr-2">
+                        <div class="round-dot"></div>
+                    </li>
+                    <li class="info"> 2015</li>
+                </ul>
+                <div class="card-description pt-4-lg  ">
+                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                </div>
+                <ul class="card-infos pt-4-lg d-flex ">
+                    <li class="badge mr-2">html</li>
+                    <li class="badge mr-2 d-none-sm">Ruby on rails</li>
+                    <li class="badge mr-2">css</li>
+                    <li class="badge">javaScript</li>
+                </ul>
+                <div class="mt-5 mt-5-lg ">
+                    <button type="button" class="card-btn btn-primary">See Project</button>
+                </div>
             </div>
-            <ul class="card-infos d-flex ">
-                <li class="badge mr-2">html</li>
-                <li class="badge mr-2">css</li>
-                <li class="badge">javaScript</li>
-            </ul>
-            <div class="mt-5">
-                <button type="button" class="card-btn btn-primary">See Project</button>
+        </div>
+        <div class="card flex-dir-row-lg d-flex flex-column p-5">
+            <div class="card-image order-lg-1">
+                <img src="assets/images/projects/project4.png" class="d-none-lg" alt="project snapshot">
+                <img src="assets/images/desktop/projects/uber-navigation.png" class="d-none-sm" alt="project snapshot">
+            </div>
+            <div class="card-body pt-4-lg  mx-1-lg ">
+                <h1 class="card-caption m-0">
+                    Multi-Post
+                    Stories
+                </h1>
+                <ul class="card-infos mt-2-lg d-flex align-baseline">
+                    <li class="info company mr-2">CANOPY</li>
+                    <li class="info  mr-2">
+                        <div class="round-dot"></div>
+                    </li>
+                    <li class="info align-self-center mr-2"> Back End Dev</li>
+                    <li class="info align-self-center mr-2">
+                        <div class="round-dot"></div>
+                    </li>
+                    <li class="info"> 2015</li>
+                </ul>
+                <div class="card-description pt-4-lg  ">
+                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                </div>
+                <ul class="card-infos pt-4-lg d-flex ">
+                    <li class="badge mr-2">html</li>
+                    <li class="badge mr-2 d-none-sm">Ruby on rails</li>
+                    <li class="badge mr-2">css</li>
+                    <li class="badge">javaScript</li>
+                </ul>
+                <div class="mt-5 mt-5-lg">
+                    <button type="button" class="card-btn btn-primary">See Project</button>
+                </div>
             </div>
         </div>
     </div>
 </section>
-<section id="about" class="bg-white round-top-rgt pt-5">
+<section id="about" class="bg-white d-flex-lg about round-top-rgt pt-5  px-about">
     <div class=" flex-grow-1 d-flex flex-column mt-5 justify-content-center pb-5 px-5">
         <h1 class="headline_title">About <br>
             Myself</h1>
@@ -202,21 +229,21 @@
     <div class=" flex-grow-1 d-flex flex-column mt-5 justify-content-center pb-5 px-5">
         <ul class="d-flex flex-column">
             <li class=" d-flex flex-column">
-                <div class="d-flex pr-3">
+                <div class="d-flex pr-3 ">
                     <h4 class="accordion flex-grow-1 ">Languages</h4>
                     <span class="icon arrow down "></span>
                 </div>
-                <ul class="d-flex flex-column justify-content-around">
-                    <li class="d-flex skills-item justify-content-around">
-                        <img src="assets/images/technical_skills/js.png" alt="Javascript">
+                <ul class="d-flex flex-column align-stretch-lg gap-2-lg  d-grid-3-lg">
+                    <li class="d-flex skills-item flex-column-lg">
+                        <img src="assets/images/technical_skills/js.png" alt="Javascript" class="small-img">
                         <h2 class="flex-grow-1">Javascript</h2>
                     </li>
-                    <li class="d-flex skills-item">
-                        <img src="assets/images/technical_skills/html.png" alt="html">
+                    <li class="d-flex skills-item flex-column-lg ">
+                        <img src="assets/images/technical_skills/html.png" alt="html" class="small-img">
                         <h2 class="flex-grow-1">HTML</h2>
                     </li>
-                    <li class="d-flex skills-item">
-                        <img src="assets/images/technical_skills/css.png" alt="css">
+                    <li class="d-flex skills-item flex-column-lg">
+                        <img src="assets/images/technical_skills/css.png" alt="css" class="small-img">
                         <h2 class="flex-grow-1">CSS</h2>
                     </li>
                 </ul>
@@ -238,31 +265,34 @@
 </section>
 <!--contact section-->
 <section class="contact">
-    <div class="contact-container">
-        <h2>Contact me</h2>
-        <p>If you have an application you are interested in developing, a
-            feature that you need built or a project that needs coding. I’d
-            love to help with it </p>
-        <form action="https://formspree.io/f/mpzbbkvv" method="post">
-            <div class="form-group">
-                <label for="name"></label><input type="text" id="name" name="user_name" placeholder="Ushindi Bienvenu"
-                                                 maxlength="30" required>
-            </div>
-            <div class="form-group">
-                <label for="mail"></label><input type="email" id="mail" name="user_email"
-                                                 placeholder="UshindiBienvenu@gmail.com" required>
-            </div>
-            <div class="form-group">
-                <label for="msg"></label><textarea id="msg" name="user_message" placeholder="Write your message here"
-                                                   maxlength="500"
-                                                   required></textarea>
-            </div>
+    <div class="contact-container pb-3-lg">
+        <div class="box d-flex flex-column align-content-center">
+            <h2>Contact me</h2>
+            <p class="text-center">If you have an application you are interested in developing, a
+                feature that you need built or a project that needs coding. I’d
+                love to help with it </p>
+            <form action="https://formspree.io/f/mpzbbkvv" method="post" class="flex-column d-flex justify-content-center">
+                <div class="form-group flex-grow-1">
+                    <label for="name"></label><input type="text" id="name" name="user_name" placeholder="Ushindi Bienvenu"
+                                                     maxlength="30" required class="row">
+                </div>
+                <div class="form-group">
+                    <label for="mail"></label><input type="email" id="mail" name="user_email"
+                                                     placeholder="UshindiBienvenu@gmail.com" required class="row">
+                </div>
+                <div class="form-group">
+                    <label for="msg"></label><textarea id="msg" name="user_message" placeholder="Write your message here"
+                                                       maxlength="500"
+                                                       required class="row"></textarea>
+                </div>
 
 
-            <button type="submit" class="btn-submit btn-primary">Get In Touch</button>
-            <span class="line"></span>
+                <button type="submit" class="btn-submit btn-primary align-self-start ">Get In Touch</button>
+                <span class="line d-none-lg"></span>
 
-        </form>
+            </form>
+        </div>
+
     </div>
 </section>
 <!--end of contact section-->
