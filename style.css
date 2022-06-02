@@ -121,6 +121,7 @@ li {
 .bar {
   border: 2px solid #6070ff;
   margin-bottom: 3px;
+  background-color: #6070ff;
 }
 
 .mt-5 {
