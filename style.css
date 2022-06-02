@@ -89,25 +89,23 @@ li {
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
-  padding-top: 2rem;
-
 }
 
-.logo:hover {
+.logo{
   animation-name: rotate;
   animation-duration: 3s;
 }
 
 @keyframes rotate {
   0% {
-    transform: rotate(0);
+    transform: rotate(-20deg);
   }
   50% {
-    transform: rotate(90deg);
+    transform: rotate(-10deg);
   }
 
   100% {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
   }
 }
 
