@@ -89,6 +89,22 @@ li {
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
+  animation-name: rotate;
+  animation-duration: 3s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-20deg);
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .headline_title {
@@ -153,6 +169,10 @@ li {
   color: #172b4d;
 }
 
+.card-image:hover {
+  transform: scale(110%);
+}
+
 .card-description {
   font-weight: 400;
   font-size: 15px;
@@ -205,12 +225,14 @@ li {
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   color: #fff;
+  transition: all 1s ease-in-out;
 }
 
 .btn-primary:active {
   background: #2230d2;
   border-radius: 8px;
   color: #fff;
+  transition: all ease-in-out 1s;
 }
 
 .bg-white {
@@ -533,6 +555,20 @@ textarea {
     width: 45%;
   }
 
+  .box:hover {
+    animation: moveToRight 5s linear;
+  }
+
+  @keyframes moveToRight {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(150px);
+    }
+  }
+
   .btn-submit {
     width: 140px;
     margin: auto;
@@ -563,5 +599,71 @@ textarea {
 
   .pl-1-lg {
     padding-left: 12px;
+  }
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.delay-3 {
+  animation-delay: 2s;
+}
+
+.move-in {
+  animation-name: moveIn;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  position: relative;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes moveIn {
+  from {
+    top: -1000px;
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.shake:hover {
+  animation-name: shake;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+.btn {
+  transition: all 2s ease-out;
+}
+
+@keyframes shake {
+  from {
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+
+  to {
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
   }
 }
