@@ -89,9 +89,6 @@ li {
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
-}
-
-.logo{
   animation-name: rotate;
   animation-duration: 3s;
 }
@@ -100,6 +97,7 @@ li {
   0% {
     transform: rotate(-20deg);
   }
+
   50% {
     transform: rotate(-10deg);
   }
@@ -558,7 +556,6 @@ textarea {
   }
 
   .box:hover {
-
     animation: moveToRight 5s linear;
   }
 
@@ -572,39 +569,39 @@ textarea {
     }
   }
 
-.btn-submit {
-  width: 140px;
-  margin: auto;
+  .btn-submit {
+    width: 140px;
+    margin: auto;
+  }
+
+  .form-group {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .card:hover .card-btn {
+    background: #2230d2;
+    border-radius: 8px;
+    color: #fff;
+  }
+
+  .card:hover {
+    border: 2px solid #a7aeff;
+  }
+
+  .pt-4-lg {
+    padding-top: 24px;
+  }
+
+  .mt-5-lg {
+    margin-top: 40px;
+  }
+
+  .pl-1-lg {
+    padding-left: 12px;
+  }
 }
 
-.form-group {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-.card:hover .card-btn {
-  background: #2230d2;
-  border-radius: 8px;
-  color: #fff;
-}
-
-.card:hover {
-  border: 2px solid #a7aeff;
-}
-
-.pt-4-lg {
-  padding-top: 24px;
-}
-
-.mt-5-lg {
-  margin-top: 40px;
-}
-
-.pl-1-lg {
-  padding-left: 12px;
-}
-
-}
 .fade-in {
   animation-name: fadeIn;
   animation-duration: 4s;
