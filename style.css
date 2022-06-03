@@ -559,20 +559,6 @@ textarea {
     width: 45%;
   }
 
-  .box:hover {
-    animation: moveToRight 5s linear;
-  }
-
-  @keyframes moveToRight {
-    0% {
-      transform: translateX(0);
-    }
-
-    100% {
-      transform: translateX(150px);
-    }
-  }
-
   .btn-submit {
     width: 140px;
     margin: auto;
