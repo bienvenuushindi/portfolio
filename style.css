@@ -169,8 +169,12 @@ li {
   color: #172b4d;
 }
 
-.card-image:hover {
-  transform: scale(110%);
+.card-image {
+  transition: all 2s ease-out;
+}
+
+.card:hover .card-image {
+  transform: scale(105%);
 }
 
 .card-description {
