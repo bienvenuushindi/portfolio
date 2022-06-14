@@ -5,32 +5,32 @@ const body = document.querySelector('body');
 const menuItems = document.querySelectorAll('.mobile-menu .list-item');
 
 function init() {
-    body.classList.remove('overflow-y');
-    document.querySelector('#headline').classList.toggle('blur');
-    document.querySelector('#toolbar').classList.toggle('blur');
-    menu.classList.toggle('d-block');
-    menu.classList.toggle('d-none');
+  body.classList.remove('overflow-y');
+  document.querySelector('#headline').classList.toggle('blur');
+  document.querySelector('#toolbar').classList.toggle('blur');
+  menu.classList.toggle('d-block');
+  menu.classList.toggle('d-none');
 }
 
 function openMenu() {
-    init();
-    body.classList.toggle('overflow-y')
+  init();
+  body.classList.toggle('overflow-y');
 }
 
 function closeMenu() {
-    init();
+  init();
 }
 
 closeMenuIcon.addEventListener('click', () => {
-    closeMenu();
-
+  closeMenu();
 });
+
 openMenuIcon.addEventListener('click', () => {
-    openMenu();
+  openMenu();
 });
 
-menuItems.forEach(function (item) {
-    item.addEventListener('click', () => {
-        closeMenu();
-    })
+menuItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    closeMenu();
+  });
 });
