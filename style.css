@@ -567,7 +567,7 @@ textarea {
     margin-right: 2rem;
   }
 
-  .card:hover .card-btn {
+  .card-btn {
     background: #2230d2;
     border-radius: 8px;
     color: #fff;
@@ -667,7 +667,7 @@ textarea {
 
 .mobile-menu {
   overflow: hidden;
-  background: #2230d2;
+  background: #3441ff;
   opacity: 0.7;
   top: 0;
   left: 0;
@@ -686,15 +686,16 @@ textarea {
 }
 
 .close {
-  width: 32px;
-  height: 32px;
+  width: 22px;
+  height: 22px;
   z-index: 5;
-  padding: 3px;
+  padding-top: 1rem;
+  padding-right: 2rem;
 }
 
 .mdiv,
 .md {
-  height: 32px;
+  height: 22px;
   width: 3px;
   background-color: #fff;
   border-radius: 5px;
@@ -721,10 +722,10 @@ textarea {
 
 .mobile-menu .list-item {
   color: #fff;
-  font-weight: 600;
-  font-size: 32px;
+  font-weight: 800;
+  font-size: 2.4em;
   text-decoration: none;
-  padding-bottom: 2em;
+  padding-bottom: 0.8em;
 }
 
 .p-0 {
