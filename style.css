@@ -23,10 +23,6 @@ header {
   padding-right: 24px;
 }
 
-.pt-5 {
-  padding-top: 24px;
-}
-
 .pb-5 {
   padding-bottom: 24px;
 }
@@ -174,7 +170,7 @@ li {
 }
 
 .card:hover .card-image {
-  transform: scale(105%);
+  transform: scale(1.05);
 }
 
 .card-description {
@@ -276,7 +272,8 @@ li {
   width: 10px;
   height: 8px;
   align-self: center;
-  padding: auto 2px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 .align-self-center {
@@ -419,6 +416,7 @@ textarea {
 .nav-list-item {
   color: #344563;
   padding-bottom: 0.6em;
+  text-decoration: none;
 }
 
 .justify-content-end {
@@ -569,7 +567,7 @@ textarea {
     margin-right: 2rem;
   }
 
-  .card:hover .card-btn {
+  .card-btn {
     background: #2230d2;
     border-radius: 8px;
     color: #fff;
@@ -656,4 +654,111 @@ textarea {
     -ms-transform: rotate(20deg);
     transform: rotate(20deg);
   }
+}
+
+.blur {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.overflow-y {
+  overflow-y: hidden;
+}
+
+.mobile-menu {
+  overflow: hidden;
+  background: #3441ff;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  position: absolute;
+  transition: all 2s ease-out;
+  height: 100vh;
+  padding-top: 1em;
+  padding-right: 1em;
+  bottom: 0;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.close {
+  width: 22px;
+  height: 22px;
+  z-index: 5;
+  padding-top: 1rem;
+  padding-right: 2rem;
+}
+
+.mdiv,
+.md {
+  height: 22px;
+  width: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.mdiv {
+  margin-left: 12px;
+  transform: rotate(45deg);
+  z-index: 10;
+}
+
+.md {
+  transform: rotate(90deg);
+  z-index: 11;
+}
+
+.align-self-end {
+  align-self: end;
+}
+
+.mobile-menu-nav-list {
+  margin-top: 2rem;
+}
+
+.mobile-menu .list-item {
+  color: #fff;
+  font-weight: 800;
+  font-size: 2.4em;
+  text-decoration: none;
+  padding-bottom: 0.8em;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.pl-2 {
+  padding-left: 2em;
+}
+
+.pt-5 {
+  padding-top: 5em;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.pt-1 {
+  padding-top: 1em;
+}
+
+.mobile-menu .border-b {
+  border-color: #000;
+  border-width: 5px;
+  width: 30%;
+  margin-bottom: 1em;
+  position: fixed;
+  bottom: 0;
+  left: 35%;
+  border-radius: 2rem;
 }

@@ -12,21 +12,36 @@
 <body>
 <header>
     <div class="row container  d-flex pb-5 flex-column">
-        <section id="toolbar" class="d-flex justify-content-between mt-3 pt-5 pb-5 px-5 toolbar">
-            <div class="logo m-0 flex-grow-1 ">Ushindi</div>
+        <section id="toolbar" class="d-flex justify-content-between mt-3 pt-1 pb-5 px-5 toolbar">
+            <h6 class="logo m-0 flex-grow-1 ">Ushindi</h6>
             <div id="menu" class="bars d-flex flex-column">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
             <nav class="flex-grow-1 nav-bar">
-                <ul class="d-flex justify-content-end gap-2">
-                    <li class="nav-list-item">Portfolio</li>
-                    <li class="nav-list-item">About</li>
-                    <li class="nav-list-item">Contact</li>
-                </ul>
+                <div class="d-flex justify-content-end gap-2">
+                    <a href="#toolbar" class="nav-list-item">Portfolio</a>
+                    <a href="#about" class="nav-list-item">About</a>
+                    <a href="#contact" class="nav-list-item">Contact</a>
+                </div>
             </nav>
         </section>
+        <div id="mobile-menu" class="mobile-menu d-none">
+            <div class="d-flex flex-column">
+                <div class="align-self-end close">
+                    <div class="mdiv">
+                        <div class="md"></div>
+                    </div>
+                </div>
+                <div class="pt-5 pl-2 d-flex flex-column">
+                    <a class="list-item" href="#toolbar">Portfolio</a>
+                    <a class="list-item" href="#about">About</a>
+                    <a class="list-item" href="#contact">Contact</a>
+                </div>
+                <div class="border-b "></div>
+            </div>
+        </div>
         <section id="headline" class="headline flex-grow-1 d-flex flex-column justify-content-center pb-5 px-5 fade-in">
             <h1 class="headline_title move-in">I’m Ushindi <br>
                 Glad to see you!</h1>
@@ -268,7 +283,7 @@
     </div>
 </section>
 <!--contact section-->
-<section class="contact">
+<section id="contact" class="contact">
     <div class="contact-container pb-3-lg">
         <div class="box d-flex flex-column align-content-center">
             <h1>Contact me</h1>
@@ -300,5 +315,6 @@
     </div>
 </section>
 <!--end of contact section-->
+<script src="script.js" ></script>
 </body>
 </html>
