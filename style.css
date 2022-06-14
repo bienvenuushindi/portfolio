@@ -416,6 +416,7 @@ textarea {
 .nav-list-item {
   color: #344563;
   padding-bottom: 0.6em;
+  text-decoration: none;
 }
 
 .justify-content-end {
@@ -675,6 +676,9 @@ textarea {
   position: absolute;
   transition: all 2s ease-out;
   height: 100vh;
+  padding-top: 1em;
+  padding-right: 1em;
+  bottom: 0;
 }
 
 .p-relative {
