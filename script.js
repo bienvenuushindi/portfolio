@@ -38,7 +38,6 @@ menuItems.forEach((item) => {
     closeMenu();
   });
 });
-
 projectDetailsButtons.forEach((btn)=>{
     btn.addEventListener('click',()=>{
         console.log("clicked");
