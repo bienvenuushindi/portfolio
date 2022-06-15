@@ -34,3 +34,4 @@ menuItems.forEach((item) => {
     closeMenu();
   });
 });
+
