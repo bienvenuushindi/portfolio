@@ -283,6 +283,12 @@ li {
 .gap-2 {
   gap: 2em;
 }
+.border-t{
+  border-top: 1px solid #dfe1e6;
+}
+.gap-sm-1{
+  gap: 0.5em;
+}
 
 .pr-3 {
   padding-right: 3em;
@@ -490,6 +496,10 @@ textarea {
     display: none;
   }
 
+  .mx-lg-auto{
+    margin: auto;
+  }
+
   .mx-1-lg {
     margin-right: 2rem;
     margin-left: 2rem;
@@ -567,7 +577,7 @@ textarea {
     margin-right: 2rem;
   }
 
-  .card-btn {
+  .card-btn:hover {
     background: #2230d2;
     border-radius: 8px;
     color: #fff;
@@ -581,12 +591,22 @@ textarea {
     padding-top: 24px;
   }
 
+  .pt-3-lg {
+    padding-top: 20px;
+  }
+
   .mt-5-lg {
     margin-top: 40px;
   }
 
   .pl-1-lg {
     padding-left: 12px;
+  }
+  .w-lg-30{
+    width: 30%;
+  }
+  .w-lg-70{
+    width: 70%;
   }
 }
 
@@ -656,7 +676,8 @@ textarea {
   }
 }
 
-.blur {
+.blur,
+section{
   filter: blur(8px);
   -webkit-filter: blur(8px);
 }
@@ -666,29 +687,37 @@ textarea {
 }
 
 .mobile-menu {
-  overflow: hidden;
   background: #3441ff;
   opacity: 0.7;
+  padding-top: 1em;
+  padding-right: 1em;
+}
+
+.mobile-menu,
+.modal{
+  overflow: hidden;
   top: 0;
   left: 0;
   right: 0;
   z-index: 2;
   position: absolute;
   transition: all 2s ease-out;
-  height: 100vh;
-  padding-top: 1em;
-  padding-right: 1em;
-  bottom: 0;
+  min-height: 100vh;
+
 }
 
 .p-relative {
   position: relative;
 }
 
-.close {
+.close,
+.modal-close{
   width: 22px;
   height: 22px;
   z-index: 5;
+}
+
+.close{
   padding-top: 1rem;
   padding-right: 2rem;
 }
@@ -752,13 +781,70 @@ textarea {
   padding-top: 1em;
 }
 
-.mobile-menu .border-b {
+.mobile-menu .border-b,
+.modal .border-b{
   border-color: #000;
   border-width: 5px;
   width: 30%;
   margin-bottom: 1em;
-  position: fixed;
+  margin-top: 1em;
+  position: relative;
   bottom: 0;
   left: 35%;
   border-radius: 2rem;
+}
+
+.mobile-menu .border-b {
+  position: fixed;
+}
+
+.modal{
+  background: rgba(0, 0, 0, 0.44);
+}
+
+.card-btn:hover .btn-icon{
+  visibility: hidden;
+}
+
+.m-sm-2{
+  margin: 1em;
+}
+
+.ml-sm-2{
+  margin-left:1em;
+}
+
+.mb-sm-1{
+  margin-bottom: 12px;
+}
+
+.mb-sm-4{
+  margin-bottom: 48px;
+}
+
+.py-sm-1{
+  padding-top:12px;
+  padding-bottom:12px;
+}
+.px-sm-2{
+  padding-right:22px;
+  padding-left:22px;
+}
+.modal-card{
+  z-index: 20;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.modal-close .md,
+.modal-close .mdiv{
+  background-color:#67798e;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.flex-grow-2 {
+  flex-grow: 2;
 }
