@@ -283,10 +283,12 @@ li {
 .gap-2 {
   gap: 2em;
 }
-.border-t{
+
+.border-t {
   border-top: 1px solid #dfe1e6;
 }
-.gap-sm-1{
+
+.gap-sm-1 {
   gap: 0.5em;
 }
 
@@ -496,7 +498,7 @@ textarea {
     display: none;
   }
 
-  .mx-lg-auto{
+  .mx-lg-auto {
     margin: auto;
   }
 
@@ -602,10 +604,12 @@ textarea {
   .pl-1-lg {
     padding-left: 12px;
   }
-  .w-lg-30{
+
+  .w-lg-30 {
     width: 30%;
   }
-  .w-lg-70{
+
+  .w-lg-70 {
     width: 70%;
   }
 }
@@ -677,7 +681,7 @@ textarea {
 }
 
 .blur,
-section{
+section {
   filter: blur(8px);
   -webkit-filter: blur(8px);
 }
@@ -694,7 +698,7 @@ section{
 }
 
 .mobile-menu,
-.modal{
+.modal {
   overflow: hidden;
   top: 0;
   left: 0;
@@ -703,7 +707,6 @@ section{
   position: absolute;
   transition: all 2s ease-out;
   min-height: 100vh;
-
 }
 
 .p-relative {
@@ -711,13 +714,13 @@ section{
 }
 
 .close,
-.modal-close{
+.modal-close {
   width: 22px;
   height: 22px;
   z-index: 5;
 }
 
-.close{
+.close {
   padding-top: 1rem;
   padding-right: 2rem;
 }
@@ -782,7 +785,7 @@ section{
 }
 
 .mobile-menu .border-b,
-.modal .border-b{
+.modal .border-b {
   border-color: #000;
   border-width: 5px;
   width: 30%;
@@ -798,50 +801,52 @@ section{
   position: fixed;
 }
 
-.modal{
+.modal {
   background: rgba(0, 0, 0, 0.44);
 }
 
-.card-btn:hover .btn-icon{
+.card-btn:hover .btn-icon {
   visibility: hidden;
 }
 
-.m-sm-2{
+.m-sm-2 {
   margin: 1em;
 }
 
-.ml-sm-2{
-  margin-left:1em;
+.ml-sm-2 {
+  margin-left: 1em;
 }
 
-.mb-sm-1{
+.mb-sm-1 {
   margin-bottom: 12px;
 }
 
-.mb-sm-4{
+.mb-sm-4 {
   margin-bottom: 48px;
 }
 
-.py-sm-1{
-  padding-top:12px;
-  padding-bottom:12px;
+.py-sm-1 {
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
-.px-sm-2{
-  padding-right:22px;
-  padding-left:22px;
+
+.px-sm-2 {
+  padding-right: 22px;
+  padding-left: 22px;
 }
-.modal-card{
+
+.modal-card {
   z-index: 20;
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .modal-close .md,
-.modal-close .mdiv{
-  background-color:#67798e;
+.modal-close .mdiv {
+  background-color: #67798e;
 }
 
-.flex-wrap{
+.flex-wrap {
   flex-wrap: wrap;
 }
 
