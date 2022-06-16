@@ -698,7 +698,7 @@ textarea {
 
 .mobile-menu,
 .modal {
-  overflow: hidden;
+  overflow-x: hidden;
   top: 0;
   left: 0;
   right: 0;
