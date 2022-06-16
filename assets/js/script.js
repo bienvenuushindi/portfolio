@@ -79,7 +79,7 @@ function setValue(target, value) {
   target.innerHTML = value;
 }
 
-function setTitle(target, value) {
+function setText(target, value) {
   setValue(target, value);
 }
 
@@ -91,11 +91,7 @@ function setLink(target, value) {
   target.attributes.href.value = ` #${value} `;
 }
 
-function setDescription(target, value) {
-  setValue(target, value);
-}
-
-function setLanguages(target, value) {
+function setList(target, value) {
   const list = value.map((item) => ` <li class="badge mr-2 mb-sm-1"> ${item} </li> `).join(' ');
   setValue(target, list);
 }
@@ -109,10 +105,10 @@ function setPopupData(project) {
   const projectSnapshot = document.querySelector('.modal-image');
   const projectDescription = document.querySelector('.modal-description');
   const projectLanguages = document.querySelector('.modal-languages');
-  setTitle(projectTitle, project.name);
+  setText(projectTitle, project.name);
   setImageSrc(projectSnapshot, project.imageSrc);
-  setDescription(projectDescription, project.description);
-  setLanguages(projectLanguages, project.languages);
+  setText(projectDescription, project.description);
+  setList(projectLanguages, project.languages);
 }
 
 projectDetailsButtons.forEach((btn) => {
