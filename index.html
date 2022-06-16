@@ -106,7 +106,7 @@
         </div>
         <div class="card flex-dir-row-lg d-flex flex-column p-5">
             <div class="card-image order-lg-1">
-                <img src="assets/images/desktop/projects/multi-post.png"  alt="Multi-Post
+                <img src="assets/images/desktop/projects/multi-post.png" alt="Multi-Post
                     Stories snapshot">
             </div>
             <div class="card-body pt-4-lg  mx-1-lg ">
@@ -176,7 +176,7 @@
         </div>
         <div class="card flex-dir-row-lg d-flex flex-column p-5">
             <div class="card-image order-lg-1">
-                <img src="assets/images/desktop/projects/uber-navigation.png"  alt="  Multi-Post
+                <img src="assets/images/desktop/projects/uber-navigation.png" alt="  Multi-Post
                     Stories snapshot">
             </div>
             <div class="card-body pt-4-lg  mx-1-lg ">
@@ -259,8 +259,11 @@
                     <li class="badge mb-sm-1">javaScript</li>
                 </ul>
                 <div class="mt-2-lg d-flex justify-content-normal-lg justify-content-center gap-sm-1 border-t pt-1">
-                    <button type="button" class="card-btn btn-primary btn d-flex gap-sm-1"><span>See live</span><img src="assets/images/projects/icons/seelive.svg" class="btn-icon" alt="see-live icon"></button>
-                    <button type="button" class="card-btn btn-primary btn d-flex gap-sm-1"><span>See source</span>  <img src="assets/images/projects/icons/github.svg" class="btn-icon" alt="github icon"></button>
+                    <button type="button" class="card-btn btn-primary btn d-flex gap-sm-1"><span>See live</span><img
+                            src="assets/images/projects/icons/seelive.svg" class="btn-icon" alt="see-live icon">
+                    </button>
+                    <button type="button" class="card-btn btn-primary btn d-flex gap-sm-1"><span>See source</span> <img
+                            src="assets/images/projects/icons/github.svg" class="btn-icon" alt="github icon"></button>
                 </div>
             </div>
 
@@ -343,24 +346,23 @@
                 feature that you need built or a project that needs coding. I’d
                 love to help with it </p>
             <form action="https://formspree.io/f/mpzbbkvv" method="post"
-                  class="flex-column d-flex justify-content-center">
+                  class="flex-column d-flex justify-content-center" id="contact-form">
                 <div class="form-group flex-grow-1">
-                    <label for="name"></label><input type="text" id="name" name="user_name"
+                    <label for="name"></label><input type="text" id="name" name="name"
                                                      placeholder="Ushindi Bienvenu"
                                                      maxlength="30" required class="row">
                 </div>
                 <div class="form-group">
-                    <label for="mail"></label><input type="email" id="mail" name="user_email"
+                    <label for="mail"></label><input type="email" id="mail" name="mail"
                                                      placeholder="UshindiBienvenu@gmail.com" required class="row">
                 </div>
                 <div class="form-group">
-                    <label for="msg"></label><textarea id="msg" name="user_message"
-                                                       placeholder="Write your message here"
-                                                       maxlength="500"
-                                                       required class="row"></textarea>
+                    <label for="message"></label><textarea id="message" name="message"
+                                                           placeholder="Write your message here"
+                                                           maxlength="500"
+                                                           required class="row"></textarea>
                 </div>
-
-
+                <div class="display-error text-center"></div>
                 <button type="submit" class="btn-submit btn-primary align-self-start ">Get In Touch</button>
                 <span class="line d-none-lg"></span>
 
@@ -370,6 +372,7 @@
     </div>
 </section>
 <!--end of contact section-->
-<script src="script.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/validate.js"></script>
 </body>
 </html>
