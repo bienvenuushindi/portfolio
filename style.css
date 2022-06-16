@@ -521,6 +521,11 @@ textarea {
     margin-right: 24px;
   }
 
+  .mx-1-lg {
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+
   .my-1-lg {
     margin-bottom: 1rem;
     margin-top: 1rem;

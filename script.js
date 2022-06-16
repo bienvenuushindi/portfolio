@@ -101,9 +101,7 @@ function setLanguages(target, value) {
 }
 
 modalCloseIcon.addEventListener('click', () => {
-  document.querySelectorAll('section').forEach((item) => item.classList.toggle('blur'));
-  modalBox.classList.toggle('d-none');
-  window.scrollTo(0, 0);
+  closeModal();
 });
 
 function setPopupData(project) {
