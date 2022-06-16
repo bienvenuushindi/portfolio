@@ -448,7 +448,7 @@ textarea {
 
 @media only screen and (max-width: 459px) {
   .card-image img {
-    max-width: 412px;
+    max-width: 100%;
   }
 }
 
