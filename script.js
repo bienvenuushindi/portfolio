@@ -96,16 +96,14 @@ function setDescription(target, value) {
 }
 
 function setLanguages(target, value) {
-  const list = value.map((item) => ` <li class="badge mr-2 mb-sm-1"> ${item} </li> `);
-  let listContent = '';
-  list.forEach((item) => {
-    listContent += item;
-  });
-  setValue(target, listContent);
+  const list = value.map((item) => ` <li class="badge mr-2 mb-sm-1"> ${item} </li> `).join(' ');
+  setValue(target, list);
 }
 
 modalCloseIcon.addEventListener('click', () => {
-  closeModal();
+  document.querySelectorAll('section').forEach((item) => item.classList.toggle('blur'));
+  modalBox.classList.toggle('d-none');
+  window.scrollTo(0, 0);
 });
 
 function setPopupData(project) {

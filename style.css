@@ -479,6 +479,15 @@ textarea {
     margin-right: auto;
   }
 
+  .border {
+    border: 1px solid #fff;
+  }
+
+  .modal .card {
+    margin: 77px 142px;
+    min-width: calc(100% - 284px);
+  }
+
   .bars {
     display: none;
   }
@@ -508,9 +517,8 @@ textarea {
     margin: auto;
   }
 
-  .mx-1-lg {
-    margin-right: 2rem;
-    margin-left: 2rem;
+  .mr-1-lg {
+    margin-right: 24px;
   }
 
   .my-1-lg {
@@ -617,6 +625,10 @@ textarea {
 
   .w-lg-70 {
     width: 70%;
+  }
+
+  .modal-description {
+    padding-right: 1em;
   }
 }
 
