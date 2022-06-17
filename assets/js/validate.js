@@ -17,7 +17,6 @@ function showSuccess(input) {
 
 function validateEmail(input, invalidMsg) {
   const emailRegex = /^[a-z]*@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
-
   const email = input.value.trim();
   if (!emailRegex.test(email)) {
     return showError(input, invalidMsg);
@@ -42,32 +41,24 @@ form.addEventListener('submit', (event) => {
 const fullName = form.elements.name;
 const msg = form.elements.message;
 
-const formData = {
-  name: '',
-  email: '',
-  msg: '',
-};
+const formData = {};
 
 function setFormData() {
-  formData.name = localStorage.getItem('contactName');
-  formData.email = localStorage.getItem('contactEmailAddress');
-  formData.message = localStorage.getItem('contactMessage');
-  fullName.value = formData.name;
-  email.value = formData.email;
-  msg.value = formData.message;
+  const collectedData = JSON.parse(localStorage.getItem('contactForm'));
+  fullName.value = collectedData.name;
+  email.value = collectedData.email;
+  msg.value = collectedData.message;
 }
 
 function populateStorage() {
   formData.name = fullName.value;
   formData.email = email.value;
   formData.message = msg.value;
-  localStorage.setItem('contactName', formData.name);
-  localStorage.setItem('contactEmailAddress', formData.email);
-  localStorage.setItem('contactMessage', formData.message);
+  localStorage.setItem('contactForm', JSON.stringify(formData));
   setFormData();
 }
 
-if (!localStorage.getItem('contactName')) {
+if (!localStorage.getItem('contactForm')) {
   populateStorage();
 } else {
   setFormData();
