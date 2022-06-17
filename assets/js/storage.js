@@ -1,4 +1,6 @@
-//form and email field elements are declared in validate.js
+// form and email field elements are declared in validate.js
+const form = document.getElementById('contact-form');
+const email = form.elements.mail;
 const fullName = form.elements.name;
 const msg = form.elements.message;
 function setFormData() {
@@ -8,14 +10,11 @@ function setFormData() {
   fullName.value = currentContactName;
   email.value = currentContactEmail;
   msg.value = currentContactMessage;
-  
 }
-
 function populateStorage() {
   localStorage.setItem('contactName', fullName.value);
   localStorage.setItem('contactEmailAddress', email.value);
   localStorage.setItem('contactMessage', msg.value);
-  
   setFormData();
 }
 
