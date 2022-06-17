@@ -36,3 +36,42 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 });
+
+// form and email field elements are declared in validate.js
+const fullName = form.elements.name;
+const msg = form.elements.message;
+
+const formData = {
+  name: '',
+  email: '',
+  msg: '',
+};
+
+function setFormData() {
+  formData.name = localStorage.getItem('contactName');
+  formData.email = localStorage.getItem('contactEmailAddress');
+  formData.message = localStorage.getItem('contactMessage');
+  fullName.value = formData.name;
+  email.value = formData.email;
+  msg.value = formData.message;
+}
+
+function populateStorage() {
+  formData.name = fullName.value;
+  formData.email = email.value;
+  formData.message = msg.value;
+  localStorage.setItem('contactName', formData.name);
+  localStorage.setItem('contactEmailAddress', formData.email);
+  localStorage.setItem('contactMessage', formData.message);
+  setFormData();
+}
+
+if (!localStorage.getItem('contactName')) {
+  populateStorage();
+} else {
+  setFormData();
+}
+
+fullName.onchange = populateStorage;
+email.onchange = populateStorage;
+msg.onchange = populateStorage;
