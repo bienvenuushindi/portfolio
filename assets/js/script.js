@@ -84,11 +84,11 @@ function setText(target, value) {
 }
 
 function setImageSrc(target, src) {
-  target.attributes.src.value = src.trimEnd();
+  target.setAttribute('src', src);
 }
 
 function setLink(target, value) {
-  target.attributes.href.value = ` #${value} `;
+  target.setAttribute('href', value);
 }
 
 function setList(target, value) {
